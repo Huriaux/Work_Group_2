@@ -236,7 +236,7 @@ main {
   padding-top: 150px;
   color: rgb(250, 250, 250);
   width: 30%;
-  margin-left: 20%;
+  margin-left: 22%;
   gap: 50px;
   height: auto;
 }
@@ -519,6 +519,20 @@ hr {
   gap: 5%;
 }
 
+@media screen and (max-width: 1024px) {
+  .containerSlider {
+    height: 30%;
+    font-size: 20%;
+    text-align: center;
+    margin-left: 20%;
+  }
+  .title2HeadHome {
+    font-size: 14px;
+  }
+  .extenstionRight {
+    display: none;
+  }
+}
 @media screen and (max-width: 600px) {
   .title2HeadHome {
     font-size: 16px;
@@ -527,8 +541,29 @@ hr {
     font-size: 20px;
   }
 }
+.leftSideFooter {
+  font-size: 70%;
+}
+
+.RightSideFooter {
+  font-size: 70%;
+}
+
+.nomeroRightSide {
+  font-size: 18px;
+}
+
 @media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+  }
   .containerSlider {
+    display: none;
+  }
+  #slider {
+    display: none;
+  }
+  .extenstion {
     display: none;
   }
   .extenstionRight {
@@ -541,6 +576,7 @@ hr {
     display: grid;
     text-align: center;
     width: 100%;
+    font-size: 20px;
   }
 }
 /* voir: cours responsive */
