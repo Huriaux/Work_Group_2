@@ -1,0 +1,116 @@
+@charset "UTF-8";
+body {
+  background-color: #222222;
+  margin-top: 25%;
+  margin-left: 30%;
+}
+
+/* CONTAINER 1 */
+.titre1 { /* n'arrive pas à le placer au dessus des photos */
+  background-color: #1e1e1e;
+  color: white;
+  width: 75%;
+  padding: 3% 0% 1% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.titre1 p {
+  font-family: Arial, Helvetica;
+  font-weight: 500;
+  color: #816d2b;
+  font-size: 13px;
+}
+.titre1 h2 {
+  font-size: 100px;
+}
+
+div.container1 {
+  background-color: #1e1e1e;
+  padding: 0% 0% 5% 5%;
+  height: 100%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(6, 10%);
+  grid-template-rows: 57% 43%;
+  gap: 2% 2%;
+  grid-template-areas: "image1 image1 image2 image2 image3 image3" "image4 image4 image4 image5 image5 image5";
+}
+div.container1 img {
+  width: 100%;
+}
+
+/* les div 'image...' dépasse de la photo */
+.image1 {
+  grid-area: image1;
+}
+
+.image2 {
+  grid-area: image2;
+}
+
+.image3 {
+  grid-area: image3;
+}
+
+.image4 {
+  grid-area: image4;
+}
+
+.image5 {
+  grid-area: image5;
+}
+
+figure {
+  border: 2px solid red;
+  margin: 0;
+}
+
+legend {
+  border: 2px solid green;
+  font-family: Arial, Helvetica;
+}
+
+figcaption {
+  border: 2px solid blue;
+  margin: 0;
+  font-size: 20px;
+}
+
+/* CONTAINER 2 */
+.container2 {
+  align-items: center;
+}
+.container2 .item {
+  background-color: #2b2b2b;
+  font-size: 12x;
+}
+.container2 .item .titre-haut {
+  color: #816d2b;
+  font-size: 13px;
+  font-weight: 500;
+}
+.container2 .item p {
+  font-family: Arial, Helvetica;
+  color: rgb(186, 186, 186);
+}
+.container2 .item h3 {
+  font-size: 30px;
+}
+
+.bouton a {
+  background-color: #816d2b;
+  color: white;
+  font-family: Arial, Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.bouton a:hover {
+  background-color: #ebc855;
+}
+
+/* voir: cours responsive *//*# sourceMappingURL=main.css.map */
