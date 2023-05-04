@@ -307,67 +307,7 @@ figcaption {
     }
 }
 
-// here css of footer 
 
-.footercontenu {
-    background-color: rgb(67, 66, 66);
-    display: flex;
-    width: auto;
-    height: auto;
-    justify-content: space-around;
-
-}
-.leftSideFooter {
-    text-align: start;
-    padding: 4%;
-    width: 40%;
-}
-.titreLeftFooter {
-    color: azure;
-    font: 1.2em ;
-    font-weight: lighter;
-}
-.parLeftFooter {
-    width: 80%;
-    color: $colorParagraph;
-}
-.RightSideFooter {
-    padding: 3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
-    background-color:  rgb(67, 66, 66);
-}
-.viber{
-    display: flex;
-    flex-direction: row;
-    color: aliceblue;
-    gap: 2%;
-}
-.imgViber{
-    margin-top: 55%;
-    
-}
-.nomeroRightSide{
-    font-size: 24px;
-    font-weight: lighter;
-    
-}
-hr
-{
-    border: 1px solid goldenrod; 
-    margin-top: -4%;
-}
-
-.imgFooter {
-    height: 20px;
-    width: 20px;
-}
-.lesPetitsImages{
-    display: flex;
-    gap: 5%;
-}
 
 
 

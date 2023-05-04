@@ -23,6 +23,7 @@ h2 {
     margin-right: 100px;
     padding-bottom: 60px;
     justify-content: space-between;
+    padding: 4% 4% 3% 3%;
     
 }
 .first {
@@ -36,16 +37,16 @@ h2 {
     text-align: left;
     
 }
-.apropos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 10px;
-}
+// .apropos {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     margin-left: 50px;
+//     margin-right: 50px;
+//     margin-top: 30px;
+//     margin-bottom: 30px;
+//     font-size: 10px;
+// }
 #litlogo {
     color: #aa8453;
     padding-right: 20px;
@@ -72,21 +73,21 @@ p, li {
     justify-content: space-around;
     
 }
-.email {
-    text-decoration-line: underline;
+// .email {
+//     text-decoration-line: underline;
     
-}
-h3 {
-    font-size: 10px;
-    text-align: center;
-    margin-left: 100px;
-}
-.pfooter {
-    margin-left: 150px;
-}
+// }
+// h3 {
+//     font-size: 10px;
+//     text-align: center;
+//     margin-left: 100px;
+// }
+// .pfooter {
+//     margin-left: 150px;
+// }
 
 footer {
-    background-color: rgb(26, 25, 25);
+    // background-color: rgb(26, 25, 25);
     display: flex;
     flex-direction: row;
     text-align: left;
