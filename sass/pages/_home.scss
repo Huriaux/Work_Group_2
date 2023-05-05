@@ -14,6 +14,139 @@ margin-left: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+// css de head 
+
+.container {
+    height: 100%;
+    margin: auto;
+    width: 100%;
+   
+}
+.contenuContainer {
+    color: aliceblue;
+    height: auto;
+    width: auto;
+}
+
+.containerSlider {
+    position:absolute;
+    top: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 150px;
+    color: rgb(250, 250, 250);
+    width: 30%;
+    margin-left: 22%;
+    gap: 50px;
+    height: auto;
+    }
+
+#slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+#slide{
+    width: 100%;
+    height: auto;
+}
+
+#precedent, #suivant {
+    position: absolute;
+    font-size: 100px;
+    background-color:rgba(0, 0, 0, 0.762);
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease ;
+
+}
+#precedent {
+    display: none;
+    // left: 0;
+}
+#suivant {
+    display: none;
+    // right: 0;
+}
+#slider:hover #precedent,#slider:hover #suivant {
+    opacity: 1;
+
+}
+
+
+.title2HeadHome{
+    font-weight:lighter;
+    letter-spacing: 3px;
+}
+
+.titleHeadHome {
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+.fa{
+    color: gold;
+    letter-spacing: 10px;
+}
+.extenstion{
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-evenly;
+    background-color: rgb(67, 66, 66);
+    width: 100%;
+    height: 100%;
+}
+
+.extenstionLeft {
+    text-align: start;
+    padding : 5% 0 5% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+}
+.title2ExtenstionHome{
+    color: rgb(145, 124, 11);
+}
+
+.titleExtenstionHome {  
+    color: white
+}
+.paraExtenstionHome {
+    color: $colorParagraph;
+}
+
+.extenstionRight{
+    padding : 5% 5% 5% 0;
+    width: 40%;
+    display: flex;
+}
+
+.imgExtenstionLeft,.imgExtenstionRight{
+    margin-top: 10%;
+    width: 40%;
+    height: 65%;
+}
+.imgExtenstionLeft {
+    margin: 8%;
+    padding-top: 4%;
+    display: flex;
+    align-self: center;
+
+}
+.imgExtenstionRight{
+    margin : 5%;
+    display: flex;
+    align-self: flex-start;
+
+}
+
+%storage-container {
+
 }
 
 %container-location {
@@ -263,3 +396,78 @@ figure {
         background-color:#ebc855;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .containerSlider{
+        height: 30%;
+        font-size: 20%;
+        text-align: center;
+        margin-left: 20%;
+    }
+    .title2HeadHome{
+        font-size: 14px;
+    }
+   .extenstionRight{
+    display: none;
+   }
+   
+  }
+
+@media screen and (max-width: 600px) {
+    .title2HeadHome  {
+      font-size: 16px;
+    }
+    .titleHeadHome{
+        font-size: 20px;
+    }
+  }
+  .leftSideFooter { font-size: 70%;}
+  .RightSideFooter{
+    font-size: 70%;
+  }
+  .nomeroRightSide{
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .main {
+        width: 100%;
+        // margin-left: 25%;
+        }
+    .containerSlider{
+        display: none;
+    }
+    #slider {
+        display: none;
+    }
+    .extenstion{
+        display: none;
+    }
+    .extenstionRight{
+        width: 100%;
+    }
+    .extenstionRight {
+        display: none;
+    }
+    .footercontenu{
+        display: grid;
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+    }
+  }
+
+
+/* voir: cours responsive */

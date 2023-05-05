@@ -5,13 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="sass/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
@@ -21,7 +15,7 @@
 
             <div class="text-boxtitle-container-left">
 
-                <span class="ti-star fstarcl"></span><span class="ti-star starcl"></span><span class="ti-star starcl"></span><span class="ti-star starcl"></span><span class="ti-star starcl"></span>
+                <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
                 <h1 class="texttitle-container-left">DUCSMAN</h1>
                 <p class="textsubtitle-container-left">DORMEZ COMME JAMAIS</p>
 
@@ -82,6 +76,42 @@
         </div>
 
     </div>
+
+    <main>
+        <!-- this for head of the page (carousel) we can use it for two page -->
+        <div class="container">
+          <div class="contenuContainer">
+            <div id="slider">
+                <img src="/img/slider/2.jpg" alt="first slide" id="slide">
+                <div id="precedent" onclick="ChangeSlide(-1)">&lt;</div>
+                <div id="suivant" onclick="ChangeSlide(1)">&gt;</div>
+            </div>
+            <div class="containerSlider">
+            <p><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+            </p>
+            <h2 class="title2HeadHome">HOTËL DE LUXE À PARIS</h2>
+            <h1 class="titleHeadHome"> L'EXPÉRINCE DU LUXE</h1>
+            <button class="btnHeadHome"> CHAMBRES & SUITES</button>
+            </div>
+          </div>
+        </div>
+    
+    <div class="extenstion">
+    <div class="extenstionLeft">
+        <p><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+        </p>
+        <h2 class="title2ExtenstionHome">HOTËL DE LUXE À PARIS</h2>
+        <h1 class="titleExtenstionHome"> L'EXPÉRINCE DU LUXE</h1>
+        <p class="paraExtenstionHome">Bienvenue dans le meilleur hôtel 5 étoiles de Paris. Elementum sesue the aucan Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Quam sed consequuntur minus voluptates voluptatem sunt tenetur perferendis repudiandae voluptas odit. Eaque debitis ipsum quibusdam tempore magni eligendi nemo illo quo.</p>
+    
+    </div>
+    <div class="extenstionRight">
+        <img class="imgExtenstionLeft" src="/img/rooms/1.jpg" alt="">
+        <img class="imgExtenstionRight" src="/img/rooms/8.jpg" alt="">
+    </div>
+    </div>
+    </main>
 
 
     <main>
@@ -147,6 +177,8 @@
         </div>
 </div>   
 
+
+
 <!-- CONTAINER 2 -->
 
 <div class="container-accueil2">
@@ -205,9 +237,13 @@
                 <img class="image3" src="images/spa/1.jpg" alt="Centre aquatique">
             </div>
 
-        </div>
-</div>
+        </div>   -->
+
 
     </main>
+
+<script src="slider.js"></script>
 </body>
+
+
 </html>
