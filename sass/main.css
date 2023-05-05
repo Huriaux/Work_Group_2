@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .btnHeadHome {
   text-align: center;
   width: 70%;
@@ -420,45 +419,81 @@ main {
   align-self: flex-start;
 }
 
-/* CONTAINER 1 */
-.titre1 { /* n'arrive pas à le placer au dessus des photos */
-  background-color: #1e1e1e;
+/* contenu principal */
+.container-accueil2, .container-accueil1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container2, .container1 {
+  padding: 0% 0% 5% 5%;
+  height: 100%;
+  width: 90%;
+}
+
+.container2 h3, figure figcaption, .titre1 h2, .titre1 {
+  font-family: "Gilda Display", serif;
   color: white;
-  width: 75%;
+}
+
+.container2 p {
+  font-family: "Barlow Condensed", serif;
+  color: rgb(186, 186, 186);
+  margin: 0;
+}
+
+.container2 .titre-haut, .titre1 p {
+  font-family: "Barlow Condensed", serif;
+  color: #816d2b;
+}
+
+.item7, .item6, .item3, .item2 {
+  background-color: #2b2b2b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 5%;
+  padding-bottom: 7%;
+  padding-top: 5%;
+}
+
+/* CONTAINER 1 */
+.container-accueil1 {
+  background-color: #1e1e1e;
+}
+
+.titre1 {
+  width: 90%;
   padding: 3% 0% 1% 5%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 .titre1 p {
-  font-family: Arial, Helvetica;
   font-weight: 500;
-  color: #816d2b;
-  font-size: 13px;
+  font-size: 1.7em;
+  margin-top: 5%;
+  margin-bottom: 0%;
 }
 .titre1 h2 {
-  font-size: 100px;
+  font-size: 50px;
+  margin-top: 2%;
+  margin-bottom: 3%;
 }
 
-div.container1 {
+.container1 {
   background-color: #1e1e1e;
-  padding: 0% 0% 5% 5%;
-  height: 100%;
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-bottom: 5%;
   display: grid;
-  grid-template-columns: repeat(6, 10%);
+  grid-template-columns: repeat(6, 15%);
   grid-template-rows: 57% 43%;
-  gap: 2% 2%;
+  gap: 4% 2%;
   grid-template-areas: "image1 image1 image2 image2 image3 image3" "image4 image4 image4 image5 image5 image5";
 }
-div.container1 img {
-  width: 100%;
-}
 
-/* les div 'image...' dépasse de la photo */
 .image1 {
   grid-area: image1;
 }
@@ -480,51 +515,123 @@ div.container1 img {
 }
 
 figure {
-  border: 2px solid red;
+  position: relative;
+  color: white;
+  height: 100%;
   margin: 0;
 }
-
-legend {
-  border: 2px solid green;
-  font-family: Arial, Helvetica;
+figure img {
+  max-width: 100%;
 }
-
-figcaption {
-  border: 2px solid blue;
+figure legend { /* =prix */
+  position: absolute;
+  font-family: "Barlow Condensed", serif;
+  letter-spacing: 4px;
+  font-weight: 600;
+  font-size: 1em;
+}
+figure figcaption { /* =chambre */
+  position: absolute;
   margin: 0;
-  font-size: 20px;
+  font-size: 2.1em;
+}
+figure .bouton1 {
+  position: absolute;
+  width: 15%;
+  border: 1px solid white;
+  transform: rotate(-90deg);
+  text-align: center;
+}
+figure .bouton1 a {
+  width: 100%;
+  color: white;
+  font-family: "Barlow Condensed", serif;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+figure .bouton1:hover {
+  background-color: rgba(255, 255, 255, 0.288);
 }
 
 /* CONTAINER 2 */
 .container2 {
-  align-items: center;
+  margin-top: 5%;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+  gap: 0;
+  grid-template-areas: "item1 item2" "item3 item4" "item5 item6" "item7 item8";
 }
-.container2 .item {
-  background-color: #2b2b2b;
-  font-size: 12x;
+.container2 img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-.container2 .item .titre-haut {
-  color: #816d2b;
-  font-size: 13px;
+.container2 .titre-haut {
   font-weight: 500;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0;
 }
-.container2 .item p {
-  font-family: Arial, Helvetica;
-  color: rgb(186, 186, 186);
+.container2 p {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  line-height: 225%;
+  margin-bottom: 5%;
 }
-.container2 .item h3 {
-  font-size: 30px;
+.container2 h3 {
+  font-size: 2.3em;
+  margin: 0;
 }
 
-.bouton a {
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+.item5 {
+  grid-area: item5;
+}
+
+.item4 {
+  grid-area: item4;
+}
+
+.item6 {
+  grid-area: item6;
+}
+
+.item7 {
+  grid-area: item7;
+}
+
+.item8 {
+  grid-area: item8;
+}
+
+.bouton2 a {
   background-color: #816d2b;
   color: white;
-  font-family: Arial, Helvetica;
-  font-size: 15px;
+  font-family: "Barlow Condensed", serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
   font-weight: 400;
   text-decoration: none;
+  padding: 2% 4% 2% 4%;
 }
-.bouton a:hover {
+.bouton2 a:hover {
   background-color: #ebc855;
 }
 
