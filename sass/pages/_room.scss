@@ -47,6 +47,7 @@ h2 {
 //     margin-bottom: 30px;
 //     font-size: 10px;
 // }
+
 #litlogo {
     color: #aa8453;
     padding-right: 20px;
@@ -91,8 +92,41 @@ footer {
     display: flex;
     flex-direction: row;
     text-align: left;
-    height: 8px;
+    // height: 8px;
     padding-bottom: 20px;
     padding-top: 20px;
     font-size: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .alldiv {
+      display: grid;
+      padding :7%;
+    }
+    .firstright{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .alldiv {
+      display: grid;
+      padding-top: 50%;
+    }
+    .firstright{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .alldiv {
+      display: grid;
+      text-align: center;
+      margin-left: -20%;
+    }
+    .firstright{
+        display: none;
+    }
 }

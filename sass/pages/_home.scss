@@ -3,7 +3,7 @@ body {
 }
 
 main {
-width: 75%;
+width: 80%;
 margin-left: 25%;
 }
 
@@ -20,6 +20,7 @@ margin-left: 25%;
     color: aliceblue;
     height: auto;
     width: auto;
+    margin: auto;
 }
 
 .containerSlider {
@@ -32,14 +33,14 @@ margin-left: 25%;
     padding-top: 150px;
     color: rgb(250, 250, 250);
     width: 30%;
-    margin-left: 22%;
+    margin-left: 20%;
     gap: 50px;
     height: auto;
     }
 
 #slider {
     position: relative;
-    width: 100%;
+    width: 99.5%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -420,6 +421,8 @@ figure {
    .extenstionRight{
     display: none;
    }
+   .footercontenu { padding: auto;
+   }
    
   }
 
@@ -430,7 +433,7 @@ figure {
     .titleHeadHome{
         font-size: 20px;
     }
-  }
+  
   .leftSideFooter { font-size: 70%;}
   .RightSideFooter{
     font-size: 70%;
@@ -438,6 +441,7 @@ figure {
   .nomeroRightSide{
     font-size: 18px;
   }
+}
 
   @media screen and (max-width: 768px) {
     .main {
@@ -450,9 +454,7 @@ figure {
     #slider {
         display: none;
     }
-    .extenstion{
-        display: none;
-    }
+  
     .extenstionRight{
         width: 100%;
     }
@@ -463,9 +465,22 @@ figure {
         display: grid;
         text-align: center;
         width: 100%;
-        font-size: 20px;
+        font-size: 1.5em;
+        
+    }
+    .leftSideFooter{
+        display: none;
+    }
+    
+  }
+
+  @media screen and (max-width: 1023px) {
+    .containerSlider {
+        height: 10%;
+        
     }
   }
+
 
 
 /* voir: cours responsive */

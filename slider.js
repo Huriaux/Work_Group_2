@@ -7,7 +7,7 @@ function ChangeSlide(sens) {
     numero = 0;
     if (numero < slide.lengthc -1)
     numero = 0;
-   document.getElementById('slide').src = '/img/slider/' + slide [numero];
+   document.getElementById('slide').src = 'img/slider/' + slide [numero];
 }
 
 setInterval("ChangeSlide (1)", 4000)
