@@ -286,7 +286,7 @@ body {
 }
 
 main {
-  width: 75%;
+  width: 80%;
   margin-left: 25%;
 }
 
@@ -300,6 +300,7 @@ main {
   color: aliceblue;
   height: auto;
   width: auto;
+  margin: auto;
 }
 
 .containerSlider {
@@ -312,14 +313,14 @@ main {
   padding-top: 150px;
   color: rgb(250, 250, 250);
   width: 30%;
-  margin-left: 22%;
+  margin-left: 20%;
   gap: 50px;
   height: auto;
 }
 
 #slider {
   position: relative;
-  width: 100%;
+  width: 99.5%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -698,6 +699,11 @@ figure .bouton1:hover {
     display: none;
   }
 }
+@media screen and (max-width: 1023px) {
+  .containerSlider {
+    height: 10%;
+  }
+}
 /* voir: cours responsive */
 body {
   background-color: rgb(34, 33, 33);
@@ -777,6 +783,34 @@ footer {
   font-size: 10px;
 }
 
+@media screen and (max-width: 1024px) {
+  .alldiv {
+    display: grid;
+    padding: 7%;
+  }
+  .firstright {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .alldiv {
+    display: grid;
+    padding-top: 50%;
+  }
+  .firstright {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .alldiv {
+    display: grid;
+    text-align: center;
+    margin-left: -20%;
+  }
+  .firstright {
+    display: none;
+  }
+}
 /* styles pour le conteneur de la page */
 .contact-page {
   max-width: 800px;

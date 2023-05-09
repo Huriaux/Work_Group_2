@@ -96,3 +96,35 @@ footer {
     padding-top: 20px;
     font-size: 10px;
 }
+@media screen and (max-width: 1024px) {
+    .alldiv {
+      display: grid;
+      padding :7%;
+    }
+    .firstright{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .alldiv {
+      display: grid;
+      padding-top: 50%;
+    }
+    .firstright{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .alldiv {
+      display: grid;
+      text-align: center;
+      margin-left: -20%;
+    }
+    .firstright{
+        display: none;
+    }
+}
