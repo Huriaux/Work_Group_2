@@ -420,6 +420,8 @@ figure {
    .extenstionRight{
     display: none;
    }
+   .footercontenu { padding: auto;
+   }
    
   }
 
@@ -430,7 +432,7 @@ figure {
     .titleHeadHome{
         font-size: 20px;
     }
-  }
+  
   .leftSideFooter { font-size: 70%;}
   .RightSideFooter{
     font-size: 70%;
@@ -438,6 +440,7 @@ figure {
   .nomeroRightSide{
     font-size: 18px;
   }
+}
 
   @media screen and (max-width: 768px) {
     .main {
@@ -451,7 +454,7 @@ figure {
         display: none;
     }
     .extenstion{
-        display: none;
+        // display: none;
     }
     .extenstionRight{
         width: 100%;
@@ -463,9 +466,15 @@ figure {
         display: grid;
         text-align: center;
         width: 100%;
-        font-size: 20px;
+        font-size: 1.5em;
+        
     }
+    .leftSideFooter{
+        display: none;
+    }
+    
   }
+
 
 
 /* voir: cours responsive */
