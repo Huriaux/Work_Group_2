@@ -145,7 +145,6 @@
     width: 100%;
     position: fixed;
     background-color: rgb(41, 41, 41);
-    padding-top: 3%;
     transition: left 0.5s ease;
     opacity: 100%;
     top: -100%
@@ -174,6 +173,7 @@
   
   /* Active class */
   .navbar-clcl.active {
+    padding-top: 3%;
     top: 22%;
     opacity: 100%;
   }
