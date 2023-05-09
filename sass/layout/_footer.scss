@@ -1,7 +1,7 @@
 // here css of footer 
 
 .footercontenu {
-    padding: 5% 8% 12% 5%;
+    padding: auto;
     background-color: rgb(67, 66, 66);
     display: flex;
     width: 100%;
@@ -11,12 +11,13 @@
 }
 .leftSideFooter {
     text-align: start;
-    // padding: 4%;
+    height: 100%;
+    padding: 4%;
     width: 40%;
 }
 .titreLeftFooter {
     color: azure;
-    font: 2em;
+    font-size: 2em ;
     font-weight: lighter;
 }
 .parLeftFooter {
@@ -68,3 +69,4 @@ hr
     display: flex;
     gap: 5%;
 }
+

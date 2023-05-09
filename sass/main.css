@@ -18,7 +18,7 @@
   }
 }
 .footercontenu {
-  padding: 5% 8% 12% 5%;
+  padding: auto;
   background-color: rgb(67, 66, 66);
   display: flex;
   width: 100%;
@@ -28,12 +28,14 @@
 
 .leftSideFooter {
   text-align: start;
+  height: 100%;
+  padding: 4%;
   width: 40%;
 }
 
 .titreLeftFooter {
   color: azure;
-  font: 2em;
+  font-size: 2em;
   font-weight: lighter;
 }
 
@@ -258,6 +260,7 @@ hr {
 
 /* Active class */
 .navbar-clcl.active {
+  padding-top: 3%;
   top: 22%;
   opacity: 100%;
   padding-top: 3%;
@@ -290,7 +293,7 @@ body {
 }
 
 main {
-  width: 75%;
+  width: 80%;
   margin-left: 25%;
 }
 
@@ -304,6 +307,7 @@ main {
   color: aliceblue;
   height: auto;
   width: auto;
+  margin: auto;
 }
 
 .containerSlider {
@@ -316,14 +320,14 @@ main {
   padding-top: 150px;
   color: rgb(250, 250, 250);
   width: 30%;
-  margin-left: 22%;
+  margin-left: 20%;
   gap: 50px;
   height: auto;
 }
 
 #slider {
   position: relative;
-  width: 100%;
+  width: 99.5%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -446,7 +450,7 @@ main {
   color: white;
 }
 
-.container2 p {
+form input, form textarea, .contact-page h3, .container2 p {
   font-family: "Barlow Condensed", serif;
   color: rgb(186, 186, 186);
   margin: 0;
@@ -713,6 +717,9 @@ figure:hover {
   .extenstionRight {
     display: none;
   }
+  .footercontenu {
+    padding: auto;
+  }
 }
 @media screen and (max-width: 600px) {
   .title2HeadHome {
@@ -721,19 +728,16 @@ figure:hover {
   .titleHeadHome {
     font-size: 20px;
   }
+  .leftSideFooter {
+    font-size: 70%;
+  }
+  .RightSideFooter {
+    font-size: 70%;
+  }
+  .nomeroRightSide {
+    font-size: 18px;
+  }
 }
-.leftSideFooter {
-  font-size: 70%;
-}
-
-.RightSideFooter {
-  font-size: 70%;
-}
-
-.nomeroRightSide {
-  font-size: 18px;
-}
-
 @media screen and (max-width: 768px) {
   .main {
     width: 100%;
@@ -747,9 +751,6 @@ figure:hover {
   #slider {
     display: none;
   }
-  .extenstion {
-    display: none;
-  }
   .extenstionRight {
     width: 100%;
   }
@@ -760,7 +761,15 @@ figure:hover {
     display: grid;
     text-align: center;
     width: 100%;
-    font-size: 20px;
+    font-size: 1.5em;
+  }
+  .leftSideFooter {
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .containerSlider {
+    height: 10%;
   }
   .leftSideFooter {
     display: none;
@@ -840,34 +849,61 @@ footer {
   display: flex;
   flex-direction: row;
   text-align: left;
-  height: 8px;
   padding-bottom: 20px;
   padding-top: 20px;
   font-size: 10px;
 }
 
-/* styles pour le conteneur de la page */
-.contact-page {
-  max-width: 800px;
-  margin: 50px;
-  padding: 50px;
+@media screen and (max-width: 1024px) {
+  .alldiv {
+    display: grid;
+    padding: 7%;
+  }
+  .firstright {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .alldiv {
+    display: grid;
+    padding-top: 50%;
+  }
+  .firstright {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .alldiv {
+    display: grid;
+    text-align: center;
+    margin-left: -20%;
+  }
+  .firstright {
+    display: none;
+  }
+}
+body {
+  background-color: #222222;
 }
 
-/* styles pour le titre "Ducsman" */
-.titreducsman {
-  font-size: 36px;
-  margin-bottom: 20px;
+main {
+  background-color: rgb(41, 41, 41);
+  width: 75%;
+  margin-left: 25%;
 }
 
-/* styles pour la description */
-.description {
-  font-size: 18px;
-  margin-bottom: 40px;
+/* -- emplacements des extends-- */
+form input, form textarea, .contact-page h3, .container2 p {
+  color: #BABABA;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: normal;
 }
 
-/* styles pour les informations et la réservation */
-.informations {
+.contact-page .loc, .contact-page .mail1, .contact-page .tel {
   display: flex;
+  flex-direction: row;
+  gap: 2%;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -964,12 +1000,150 @@ footer {
   margin-bottom: 40px;
 }
 
-.Map iframe {
+/* ----- */
+@media screen and (max-width: 360px) {
+  .box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+section {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h2 {
+  font-family: "Gilda Display", serif;
+  color: white;
+  font-size: 1.8em;
+  font-weight: normal;
+}
+
+/* contact page */
+@media screen and (max-width: 360px) {
+  .contact-page {
+    margin-top: 125%;
+    max-width: 220px;
+  }
+}
+.contact-page {
+  width: 400px;
+  color: #BABABA;
+  font-family: "Barlow Condensed", serif;
+  font-size: 1.1em;
+}
+.contact-page h3 {
+  margin: 15% 0% 0% 0%;
+}
+.contact-page .description {
+  margin: 7% 0% 0% 0%;
+  font-size: 1em;
+  letter-spacing: 1px;
+  line-height: 175%;
+}
+.contact-page .tel .téléphone p {
+  color: rgb(146, 130, 42);
+  font-size: 1.5em;
+  margin: 0;
+}
+.contact-page .tel span {
+  margin-top: 5%;
+  font-size: 150%;
+}
+.contact-page .mail1 .email div {
+  color: rgb(146, 130, 42);
+  font-size: 1.5em;
+  margin: 0;
+}
+.contact-page .mail1 span {
+  margin-top: 5%;
+  font-size: 150%;
+}
+.contact-page .loc .adresse p {
+  margin: 0;
+}
+.contact-page .loc span {
+  margin-top: 5%;
+  font-size: 170%;
+}
+
+/* formulaire */
+@media screen and (max-width: 360px) {
+  .formulaire {
+    width: 100px;
+  }
+  .Contact {
+    width: 50%;
+  }
+}
+.formulaire {
+  width: 400px;
+}
+
+form {
+  width: 380px;
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 15% 15% 55% 15%;
+  gap: 25% 5%;
+  grid-auto-flow: row;
+  grid-template-areas: "nom mail2" "telephone sujet" "message message" "btn btn";
+}
+form #message {
+  grid-area: message;
+}
+form .nom {
+  grid-area: nom;
+}
+form .mail2 {
+  grid-area: mail2;
+}
+form .telephone {
+  grid-area: telephone;
+}
+form .sujet {
+  grid-area: sujet;
+}
+form .btn {
+  grid-area: btn;
+}
+form input, form textarea {
+  background-color: rgb(41, 41, 41);
+  height: 175%;
+  border: 0;
+  border-bottom: 1px solid rgb(124, 123, 123);
+}
+
+textarea#message {
+  color: #BABABA;
+  height: 120%;
+}
+
+input.envoyer {
+  width: 55%;
+  height: 150%;
+  background-color: rgb(146, 130, 42);
+  color: white;
+  font-size: 1.5em;
+}
+input.envoyer:hover {
+  background-color: rgb(173, 158, 73);
+}
+
+/* carte */
+#carte {
+  padding: 10% 2% 10% 5%;
+}
+
+iframe {
   width: 100%;
-  height: 350px;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  height: 450px;
+  -webkit-filter: grayscale(100%);
 }
 
 /*
