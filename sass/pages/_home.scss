@@ -631,6 +631,14 @@ figure {
     #slider {
         display: none;
     }
+    .extenstion {
+        padding-top: 40%;
+        
+  }
+  .extenstionLeft {
+    width: 100%;
+    text-align: center;
+  }
   
     .extenstionRight{
         width: 100%;
@@ -660,6 +668,13 @@ figure {
         display: none;
     }
   }
+
+  @media screen and (max-width: 320px) {
+    .extenstion {
+        padding-top: 100%;
+  }
+}
+
 
 
 
